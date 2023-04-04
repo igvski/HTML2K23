@@ -1,0 +1,19 @@
+a:link {
+    color: #FF0000
+}
+
+a:visited {
+    color: #00f000;
+}
+
+a:hover {
+    color:hotpink;
+}
+
+a:active {
+    color:yellow;
+}
+
+p.test123:hover {
+    background-color: #FF0000;
+}
