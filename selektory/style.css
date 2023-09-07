@@ -43,3 +43,8 @@ div.ostatni p:hover {
     color:red;
 
 }
+
+#container_one .pierwszy_drugi p::first-letter{
+    color:rgb(0, 200, 255);
+
+}
