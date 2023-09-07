@@ -1,0 +1,45 @@
+body {
+    font-size: 16px;
+}
+
+div.pierwszy_drugi p {
+    color:blue;
+}
+
+p::selection {
+    background: yellow;
+}
+
+div.ostatni p {
+    color:indigo;
+}
+
+div.ostatni p:hover {
+    color: red;
+}
+
+.test {
+    background-color: lightgreen;
+}
+
+.test.wiary {
+    color:purple;
+}
+
+#container_one h1 {
+    color:green;
+}
+
+#container_one h2 {
+    background-color: orange;
+    color: white;
+}
+
+#container_one span {
+    font-size: 200%;
+}
+
+#container_one .pierwszy_drugi p::first-line{
+    color:red;
+
+}

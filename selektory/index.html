@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>CSS podstawy i selektory sprawdzian - porpawka 190523</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="CSS podstawy i selektory sprawdzian - poprawka ">
+        <meta name="author" content="[Tu wpisz swoje imię i nazwisko]">
+        <meta name="robots" content="noindex,nofollow"> 
+        <meta http-equiv="X-Ua-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="/style.css">
+        <style>
+
+            div.container{
+                margin: 50px auto;
+            }
+
+            #container_four a {
+                display: block;
+                padding: 5px;
+                margin-top: 5px;
+                border: 5px solid grey;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <!-- pomoce naukowe 
+
+        https://www.w3schools.com/css/css_selectors.asp
+        https://www.w3schools.com/css/css_combinators.asp
+        https://www.w3schools.com/css/css_pseudo_classes.asp
+        https://www.w3schools.com/css/css_pseudo_elements.asp
+        https://www.w3schools.com/css/css_attribute_selectors.asp
+
+        Wszystkie selektory
+        https://www.w3schools.com/cssref/css_selectors.php
+
+        Specyficzność
+        https://www.w3schools.com/css/css_specificity.asp
+
+        Wymuszenie
+        https://www.w3schools.com/css/css_important.asp
+
+        
+            UWAGA! 
+            Posługujemy się wyłącznie selektorami, nie dopisujemy żadnych klas, identyfikatorów itp.
+        -->    
+
+        Łacznie 25pkt
+
+        <!-- zadanie 1/2 (12)
+          1 Wszystkim elementom w body <body> ustaw wielkość czcionki na 16px;
+          1 Ustaw wszytkim p występujących w div o klasie "pierwszy_drugi" kolor czcionki na niebieski {color: blue;}
+          1 Ostyluj stan zaznaczenia (pseudoelement) dowolnego akapitu <p> ustawiając kolor tła na yellow {background: yellow;}
+          1 Wszystkim elementom <p> w ostatnim elemencie <div> - klasa "ostatni" - nadaj kolor indygo {color: indigo;}
+          1 Wszystkim elementom <p> w ostatnim elemencie <div> - klasa "ostatni" -po najechaniu zmień kolor na czerwony {color: red;}    
+          2 Wszystkim elementom o klasie "test" nadaj background-color: lightgreen;, a elementom dodatkowo zawierającym klasę "wiary" zmień kolor czcionki dowolnie
+
+          Uwaga!!!! Wyłącznie w pierwszym kontenerze o id container_one:
+            
+          1 Ustaw kolor czionki nagłówka <h1> na zielony używając właściwego selektora oraz { color: green; }
+          1 Ustaw nagłówkowi <h2> pomarańczowy background i kolor czcionki biały {background-color: orange; color: white; }
+          1 Ustaw wielkość czcionki tekstu umieczonego w  <span> na 200%  krzystając z {font-size: 200%;}
+          1 W akapicie <p> wenątrz div o klasie pierwszy_drugi zmień kolor czcionki pierwszej linii na dowolny {color: x;} oraz zmień kolor i wielkość pierwszej litery na 50px {color: purple; font-size: 50px;}     
+          1 W pliku zewnętrznym styli nadpisz (wymuś!) kolor nagłówka h1 tego kontenera na dowolny (inny niż zielony); !!!! + 1 dodatkowy pkt za napisanie w komentarzu pod selektorem jak inaczej można by to wykonać.
+        -->
+
+
+        <div class="container" id="container_one">
+              <h1 class="pierwszy_naglowek">This is a heading</h1>
+              <p>Veggies es proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui repellat voluptatum dolor possimus molestiae nihil similique, earum eveniet quos exercitationem, amet totam sequi aliquam quia minima eius tempore dignissimos ducimus, cum eos. Temporibus optio odit a reiciendis veritatis maxime rerum numquam ad et commodi, voluptatum, repellat, debitis facere alias laboriosam? Porro placeat sed, ex fuga pariatur quod nisi ducimus numquam optio. Reprehenderit voluptate exercitationem voluptatum error veritatis, suscipit quae illum quo ut maxime nobis molestias ex laboriosam illo consectetur itaque rem. Placeat, in voluptatum labore maxime fugit incidunt cum obcaecati nemo facilis, aperiam dolore odit minus tempore numquam sit earum.</p>
+              <p>Veggies es proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui repellat voluptatum dolor possimus molestiae nihil similique, earum eveniet quos exercitationem, amet totam sequi aliquam quia minima eius tempore dignissimos ducimus, cum eos. Temporibus optio odit a reiciendis veritatis maxime rerum numquam ad et commodi, voluptatum, repellat, debitis facere alias laboriosam? Porro placeat sed, ex fuga pariatur quod nisi ducimus numquam optio. Reprehenderit voluptate exercitationem voluptatum error veritatis, suscipit quae illum quo ut maxime nobis molestias ex laboriosam illo consectetur itaque rem. Placeat, in voluptatum labore maxime fugit incidunt cum obcaecati nemo facilis, aperiam dolore odit minus tempore numquam sit earum.</p>
+              <p>Veggies es proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui repellat voluptatum dolor possimus molestiae nihil similique, earum eveniet quos exercitationem, amet totam sequi aliquam quia minima eius tempore dignissimos ducimus, cum eos. Temporibus optio odit a reiciendis veritatis maxime rerum numquam ad et commodi, voluptatum, repellat, debitis facere alias laboriosam? Porro placeat sed, ex fuga pariatur quod nisi ducimus numquam optio. Reprehenderit voluptate exercitationem voluptatum error veritatis, suscipit quae illum quo ut maxime nobis molestias ex laboriosam illo consectetur itaque rem. Placeat, in voluptatum labore maxime fugit incidunt cum obcaecati nemo facilis, aperiam dolore odit minus tempore numquam sit earum.</p>
+              <h2>A level 2 heading</h2>
+              <p>Gumbo beet greens corn soko endive <span>gumbo gourd</span>. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. <b>Dandelion</b> cucumber earthnut pea peanut oko zucchini.</p>
+              <div class="pierwszy_drugi">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quibusdam placeat debitis at cupiditate? Doloremque esse rem ab quo omnis deleniti dolorem quidem fuga perspiciatis nobis fugit, quod a. Ipsa neque illum recusandae unde id voluptatum enim expedita, ipsum esse ullam veniam assumenda nemo! Cum ad, necessitatibus repellat iusto neque cumque soluta vitae ex, nihil voluptates recusandae sit, vero incidunt alias. Eius officiis natus nemo voluptates fugit quia hic perspiciatis quos, aliquam ea ad eveniet vel magni. Ex ratione quasi qui quos obcaecati consectetur repellat ducimus, atque quae, tempora, placeat nemo architecto nobis illo ullam maxime doloribus esse corrupti? Recusandae.</p>
+              </div>
+        </div>
+
+        
+         
+        <!-- zadanie 3 (5 pkt)
+            W stylach wew. lub pliku zew. styli (style.css): 
+
+            1 Nadaj elementowi o identyfikatorze special żółte tło {background-color: yellow; }.
+            1 Nadaj elementowi z klasą alert szare obramowanie o szerokości 1 piksela { border: 1px solid grey; }.
+            1 Jeśli element z klasą alert ma również klasę stop, ustaw tło na czerwono. {background-color: red; }
+            1 Jeśli element z klasą alert ma również klasę go, spraw, aby tło było zielone  { color: white; }  
+            1 Jedynie w div o id container_two pogrub czcionkę tekstu w każdym <span> występującym w akapicie <p> używając właściwości {font-weight: bold;} 
+        -->
+
+        <div class="container container_two" id="container_two">
+            <h1>This is a heading</h1>
+            <p>Veggies es
+                <span class="alert">bonus vobis</span>, proinde vos postulo
+                <span class="alert stop">essum magis</span>
+                kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.</p>
+            <h2 id="special">A level 2 heading</h2>
+            <p>Gumbo beet greens corn soko endive gumbo gourd.</p>
+            <h2>Another level 2 heading</h2>
+            <p>
+                <span class="alert go">Parsley shallot</span>
+                courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.
+            </p>
+      </div>
+
+       <!-- zadanie 4 (5) 
+          3 W poniższym kontenerze ostyluj łącze (link), zmieniając stan łącza (link) na pomarańczowy {color: orange;}, odwiedzone (visited) łącza na zielony {color: green;} i usuwając podkreślenie po najechaniu (hover) myszką {text-decoration: none;}.
+          2 Ustaw tło co drugiego wiersza w tabeli, wybierając te wiersze i nadając im kolor tła nr 333 {background-color: #333;} i biały kolor czionki dla każdej komórki tego wiersza  {color: white;}.
+       -->
+
+
+      <div class="container" id="container_tree">
+        <p>Veggies es <a href="https://teb.edu.pl" target="_blank">teb.edu.pl</a>, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.</p>
+        <p class="test wiedzy">Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+        <table class="tabela">
+            <tbody>
+            <tr>
+                <th>Fruits</th>
+                <th>Vegetables</th>
+            </tr>
+            <tr>
+                <td class="test wiedzy">Apple</td>
+                <td>Potato</td>
+            </tr>
+            <tr>
+                <td>Orange</td>
+                <td>Carrot</td>
+            </tr>
+            <tr>
+                <td class="test wiary">Tomato</td>
+                <td>Parsnip</td>
+            </tr>
+            <tr>
+                <td>Kiwi</td>
+                <td>Onion</td>
+            </tr>
+            <tr>
+                <td>Banana</td>
+                <td>Beet</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+       
+       
+        <!-- zadanie 5 (3) - selektory atrybutów
+          1 Elementy <a> z atrybutem tytułu (dowolnym) ostyluj kolor obramowania: różowy {border-color: pink;}.
+          1 Elementy <a> z atrybutem href, który gdzieś w swojej wartości zawiera słowo "contact" ostyluj ustawiając ich obramowanie na pomarańczowo {border-color: orange;}.
+          1 Elementy <a> z wartością href zaczynającą się od https ostyluj nadając zieloną ramkę  {border-color: green;}
+        -->
+        <div class="container" id="container_four">
+            <ul>
+                <li><a href="https://example.com">Link 1</a></li>
+                <li><a href="http://example.com" title="Visit example.com">Link 2</a></li>
+                <li><a href="/contact">Link 3</a></li>
+                <li><a href="../contact/index.html">Link 4</a></li>
+            </ul>
+        </div>
+
+        <div class="ostatni">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, excepturi! Praesentium, corrupti. Deleniti, aspernatur consequatur. Commodi magni deleniti dolorem ipsam at accusantium quam laboriosam iste cumque. Minima, id omnis error exercitationem obcaecati odio. Quasi optio rem doloremque alias itaque praesentium voluptatibus ab ipsa unde assumenda in natus nam vel expedita inventore quis atque, quod error! Reprehenderit iusto, officiis consectetur sint corporis dolor doloremque aliquid consequatur praesentium, sunt nulla obcaecati sequi cumque autem vero exercitationem accusantium ad adipisci. Aperiam repellat qui reprehenderit atque suscipit vitae ullam consequuntur, aut porro nemo id voluptatem praesentium culpa optio libero sunt corporis perferendis officiis vero cumque voluptatibus, alias nulla. Voluptas est quas eaque vel aperiam ex expedita quo, reprehenderit accusantium fuga doloribus modi tempora consequatur a aliquid quisquam minima! Illo veritatis impedit, minus, maxime soluta corporis eaque mollitia labore voluptate excepturi nisi facilis, non esse. Deserunt fugiat unde animi cupiditate temporibus ut quisquam nisi, error voluptates excepturi, ducimus veniam est ipsa culpa! Repellendus neque assumenda labore quibusdam non voluptatibus voluptatum, fuga atque, nostrum blanditiis ad, earum iure quaerat dolorem quos eveniet cupiditate provident velit sint. Modi inventore doloremque amet, iste, consectetur, assumenda quidem ratione vel corrupti libero at perspiciatis vitae voluptatum! Eligendi officia deserunt delectus.</p>
+        </div>
+
+
+    </body>
+</html> 
