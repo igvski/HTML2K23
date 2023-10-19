@@ -1,0 +1,60 @@
+nav.druga {
+    width: 30%;
+    height: 650px;
+    float: left;
+    background-color: red;
+}
+
+section {
+    width: 70%;
+    height: 650px;
+    float: right;
+    background-color: yellow;
+}
+
+article.art1 {
+    float: left;
+    padding: 20px;
+}
+
+article.art1 img {
+    float: left;
+    padding: 20px;
+}
+
+article.art2 img {
+    float: right;
+    padding: 20px;
+}
+
+article.art2 {
+    padding: 20px;
+}
+
+footer {
+    clear: both;
+    background-color: gray;
+    text-align: center;
+    padding: 1px;
+}
+
+nav.pierwsza {
+    text-align: right;
+    clear: both;
+    padding: 10px;
+}
+
+img {
+    float: left;
+    padding: 10px;
+}
+
+header {
+    background-color: hotpink;
+    padding: 20px;
+}
+
+nav.pierwsza a {
+    padding: 3px;
+}
+
